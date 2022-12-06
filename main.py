@@ -4,8 +4,6 @@ import os
 import discord
 from discord import app_commands
 
-import keep_online
-
 FADE_GUILD = discord.Object(id=1013604604480598046)
 
 
@@ -175,5 +173,4 @@ async def tryout(interaction: discord.Interaction):
     await tryout_channel.send(member.mention, embed=embed)
 
 
-keep_online.keep_online()
 client.run(os.getenv("token"))
